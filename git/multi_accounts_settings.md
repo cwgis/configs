@@ -35,3 +35,14 @@
         $ ssh-add -l
 
 ## 推送至多个Git代码托管服务仓库
+
+同时向github,gitcafe或公司内部git平台push代码, 编辑`.git/config`文件
+
+        $ vim .git/config
+
+向`.git/config`中添加多个git源url
+
+        $ [remote "origin"]
+        $   url = git@github.com:cwgis/configs.git
+        $   url = ssh://g@gitcafe.com/username/configs.git
+        $   fetch = +refs/heads/*:refs/remotes/origin/*

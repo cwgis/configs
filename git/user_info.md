@@ -9,7 +9,7 @@
 
   HTTPS方式得通过用户名和密码形式认证，为了避免每次都输入用户名和密码
 
-  通过`git config --global credential.helper "cache --timeout=3600000000000`
+  通过`git config --global credential.helper "cache --timeout=3600000000000"`
 
   可以将用户名和密码长时间缓存住
 

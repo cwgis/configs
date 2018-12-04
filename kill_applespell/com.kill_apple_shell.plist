@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Label唯一的标识 -->
+  <key>Label</key>
+  <string>com.kill_apple_spell.plist</string>
+  <!-- 指定要运行的脚本 -->
+  <key>ProgramArguments</key>
+  <array>
+      <string>/Users/{Username}/scripts/applespell.sh</string>
+  </array>
+  <!-- 指定要运行的时间, 间隔5分钟运行一次 -->
+  <key>StartInterval</key>
+  <integer>120</integer>
+<!-- 标准输出文件 -->
+<key>StandardOutPath</key>
+<string>/Users/{Username}/scripts/applespell.log</string>
+<!-- 标准错误输出文件，错误日志 -->
+<key>StandardErrorPath</key>
+<string>/Users/{Username}/scripts/applespell.err</string>
+</dict>
+</plist>
